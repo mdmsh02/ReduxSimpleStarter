@@ -23,7 +23,7 @@ class App extends Component {
         }));
     };
     render() {
-        const throttledSearch = _.debounce((term) => this.videoSearch(term),300);
+        const throttledSearch = _.debounce((term) => this.videoSearch(term),600);
         return (
             <div>
                 <SearchBar onSearch = {throttledSearch} />
